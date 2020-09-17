@@ -1,0 +1,26 @@
+	
+
+<h4>Appointments</h4>
+
+<table class=" table table-striped" data-sort-name="name" data-sort-order="desc">
+  <thead>
+    <tr>
+      <th data-field="name" data-sortable="true">Date</th>
+      <th data-field="age" data-sortable="true">Time</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @appointments.each do |appointment| %>
+      <tr>
+        <td><%= appointment.date %></td>
+        <td><%= appointment.time %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Back', doctors_path %>
+
