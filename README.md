@@ -22,3 +22,20 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+#please use the below commands to execute this project
+
+git clone git@github.com:ashok-kumar-miryala/doctors.git
+
+bundle install
+
+rails db:create
+
+rails db:migrate
+
+signup with new use
+
+http://localhost:3000/users/sign_in
+
+rails db:seed
+
